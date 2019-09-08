@@ -1,8 +1,3 @@
-var variavelGlobal = "ei sou acessivel em qualquer parte";
-
-function Calculo(n1, n2){
-	var variavelLocal = 98;
-	return n1+n2 * variavelLocal;
+function botaoClicado() {
+	document.getElementById('agradecimento').innerHTML = "<b> Agradecido </b>";
 }
-
-alert(Calculo(30,78));
