@@ -1,42 +1,8 @@
-var idade = console.log("Digite a sua idade");
-var segundos = 0;
-var acao = 0 
-var count = 0
-data = new Date();
+var variavelGlobal = "ei sou acessivel em qualquer parte";
 
-
-
-//Condicionais
-if (idade >= 18) {
-	console.log("Maior de idade");
-} else {
-	console.log("Menor de idade");
+function Calculo(n1, n2){
+	var variavelLocal = 98;
+	return n1+n2 * variavelLocal;
 }
 
-switch(idade){
-	case idade > 18: "Voce é maior de idade" 
-	break;
-
-	default: "Voce é menor de idade"
-	break;
-}
-
-//Laços de repetição
-do{
-	console.log("Do while em ação!");
-	acao++;
-	while(acao < 5);
-}
-
-while (segundos < 10){
-	segundos++;
-	console.log(segundos);
-}
-
-for (count = 0; count < 50; count++){
-	console.log(count);
-}
-
-// Varios metodos para o Date
-alert(data.getMinutes());
-alert(data.getDay());
+alert(Calculo(30,78));
