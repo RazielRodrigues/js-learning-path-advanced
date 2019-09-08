@@ -13,10 +13,12 @@ if (idade >= 18) {
 	console.log("Menor de idade");
 }
 
-
 switch(idade){
-	case idade >18: "Voce é maior de idade" break;
-	default: "Voce é menor de idade" break;
+	case idade > 18: "Voce é maior de idade" 
+	break;
+
+	default: "Voce é menor de idade"
+	break;
 }
 
 //Laços de repetição
