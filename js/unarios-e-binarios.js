@@ -14,6 +14,8 @@ console.log(2 in vetorzinho);
 
 console.log('PI' in Math);
 
+objeto instanceof tipoObjeto;
+
 /*
 
 operador in serve para retornar verdadeiro ou falso
@@ -23,5 +25,3 @@ propriedades e outras coisas.
 O instanceof retorna algo relacionado a instancia de um novo objeto
 
 */
-
-objeto instanceof tipoObjeto;
