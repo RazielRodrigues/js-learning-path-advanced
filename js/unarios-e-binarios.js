@@ -20,4 +20,8 @@ operador in serve para retornar verdadeiro ou falso
 dentro de uma certa condiçãom serve também para saber
 propriedades e outras coisas.
 
+O instanceof retorna algo relacionado a instancia de um novo objeto
+
 */
+
+objeto instanceof tipoObjeto;
