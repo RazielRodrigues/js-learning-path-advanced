@@ -60,3 +60,5 @@ fatiado.splice(
 //Primeiro parametro é o nome do valor, segundo parametro é o
 //indice do vetor 0,1,2 etc, e o terceiro parametro é o nome do array (opcional)
 fatiado.forEach((numero, index, fatiado) => console.log(numero, index, fatiado));
+
+fatiado.map((numero,index) => '${index} ---- ${numero}');
