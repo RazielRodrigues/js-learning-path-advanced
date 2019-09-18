@@ -60,5 +60,25 @@ fatiado.splice(
 //Primeiro parametro é o nome do valor, segundo parametro é o
 //indice do vetor 0,1,2 etc, e o terceiro parametro é o nome do array (opcional)
 fatiado.forEach((numero, index, fatiado) => console.log(numero, index, fatiado));
-
 fatiado.map((numero,index) => '${index} ---- ${numero}');
+
+
+//função flat vai juntando um array com o outro dependendo da "profundidade dele"
+var dados = ['a','b',['c','d']];
+dados.flat(2);
+
+//Executa um map e depois um flat com um de profundidade
+fatiado.flatMap((numero,index) => '${index} ---- ${numero}');
+
+//Retorna as chaves ou seja os indices
+fatiado.keys();
+
+//Retorna os valores
+fatiado.values();
+
+//Retorna as chaves ou seja os indices
+fatiado.entries();
+
+//Serve para fazer iterator
+fatiado.next();
+
