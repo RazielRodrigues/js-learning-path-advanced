@@ -82,3 +82,11 @@ p.name();
 
 p.setname('Raziel M.');
 p.getname();
+
+class person{
+	static walk(){
+		console.log('walking...');
+	}
+}
+
+console.log(person.walk());
