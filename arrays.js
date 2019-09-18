@@ -56,3 +56,7 @@ fatiado.splice(
 	'quantos itens quer remover a partir da posicao',
 	'item que quer adicionar'
 );
+
+//Primeiro parametro é o nome do valor, segundo parametro é o
+//indice do vetor 0,1,2 etc, e o terceiro parametro é o nome do array (opcional)
+fatiado.forEach((numero, index, fatiado) => console.log(numero, index, fatiado));
