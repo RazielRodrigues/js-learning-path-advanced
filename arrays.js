@@ -102,11 +102,29 @@ var buscardadosindice = arrayindice.indexOf(1);
 var buscardadosindice = arrayindice.LastindexOf(1);
 console.log(buscardados);
 
-
 //Verifica se no array tem o item 1 e retorna um booleano
 var buscardadosindice = arrayindice.includes(1);
 console.log(buscardados);
 
-//Verifica se no array tem um item que satisfaz a condição
+//Verifica se no array tem pelo menos um item que satisfaz a condição e retorna um bool
 var buscardadosindice = arrayindice.some(value => value != 7);
+console.log(buscardados);
+
+//Verifica se no array todos os items satisfaz a condição e retorna um bool
+var buscardadosindice = arrayindice.every(value => value === 7);
+console.log(buscardados);
+
+//ordena os itens de um array
+var buscardadosindice = arrayindice.sort(value => value);
+console.log(buscardados);
+
+//reverter os itens de um array 0,1,3 fica 3,1,0
+var buscardadosindice = arrayindice.reverse();
+
+//separa os itens com -
+var buscardadosindice = arrayindice.join('-');
+console.log(buscardados);
+
+//separa os itens com -
+var buscardadosindice = arrayindice.join('-');
 console.log(buscardados);
