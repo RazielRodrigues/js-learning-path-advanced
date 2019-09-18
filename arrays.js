@@ -42,3 +42,10 @@ console.log(frutas);
 var salgados = ['kibe', 'coxinha'];
 var concatenado = frutas.concat(salgados);
 console.log(concatenado);
+
+//fatia o array com o inicio e a final determinado 
+//pega essa fatia e cria um novo array
+var fatiado = [1,2,3,4,5];
+console.log(fatiado);
+fatia = fatiado.slice(0,3);
+console.log(fatia);
