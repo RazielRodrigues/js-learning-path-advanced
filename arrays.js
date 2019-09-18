@@ -82,6 +82,19 @@ fatiado.entries();
 //Serve para fazer iterator
 fatiado.next();
 
-//Buscando dados no array, seguindo a condição
+//Buscando dados no array com base nos valores, seguindo a condição
 var buscardados = fatiado.find(value => value > 4);
+console.log(buscardados);
+
+//Buscando dados no array com base nos indices, seguindo a condição
+var buscardados = fatiado.findIndex(value => value > 0);
+console.log(buscardados);
+
+//Trazendo os dados do array que satisfazem a condição e gerando um novo array
+var buscardados = fatiado.filter(value => value > 1);
+console.log(buscardados);
+
+//Trazendo os dados do array que satisfazem a condição e gerando um novo array
+var arrayindice = [1,1,2,2,3,4];
+var buscardadosindice = arrayindice.indexOf(1);
 console.log(buscardados);
