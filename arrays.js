@@ -94,7 +94,19 @@ console.log(buscardados);
 var buscardados = fatiado.filter(value => value > 1);
 console.log(buscardados);
 
-//Trazendo os dados do array que satisfazem a condição e gerando um novo array
+//Trazendo o indice do primeiro item que satisfaz
 var arrayindice = [1,1,2,2,3,4];
 var buscardadosindice = arrayindice.indexOf(1);
+
+//Trazendo o ultimo indice do primeiro item que satisfaz
+var buscardadosindice = arrayindice.LastindexOf(1);
+console.log(buscardados);
+
+
+//Verifica se no array tem o item 1 e retorna um booleano
+var buscardadosindice = arrayindice.includes(1);
+console.log(buscardados);
+
+//Verifica se no array tem um item que satisfaz a condição
+var buscardadosindice = arrayindice.some(value => value != 7);
 console.log(buscardados);
