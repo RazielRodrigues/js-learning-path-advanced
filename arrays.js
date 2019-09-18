@@ -82,3 +82,6 @@ fatiado.entries();
 //Serve para fazer iterator
 fatiado.next();
 
+//Buscando dados no array, seguindo a condição
+var buscardados = fatiado.find(value => value > 4);
+console.log(buscardados);
