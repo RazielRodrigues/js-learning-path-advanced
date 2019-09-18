@@ -49,3 +49,10 @@ var fatiado = [1,2,3,4,5];
 console.log(fatiado);
 fatia = fatiado.slice(0,3);
 console.log(fatia);
+
+//Adiciona e remove itens especificando a posição
+fatiado.splice(
+	'posicao',
+	'quantos itens quer remover a partir da posicao',
+	'item que quer adicionar'
+);
