@@ -1,0 +1,3 @@
+function cachorro(argument) {
+	// body...
+}
