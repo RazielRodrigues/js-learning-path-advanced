@@ -2,7 +2,7 @@
 
 const text = String('hello proto');
 
-console.log(text.__proto__.split === String.prototype.split);
+console.log(text._proto_.split === String.prototype.split);
 
 console.log(text.constructor === String);
 
