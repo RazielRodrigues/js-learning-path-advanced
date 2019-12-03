@@ -44,13 +44,17 @@ arroComStatement(10,5);
 var arrowUmParametro = a => a + 19;
 console.log(arrowUmParametro(10));
 
+var arrowObjeto = () => ({nome: 'Raziel'});
 
+console.log(arrowObjeto());
 
+var arrowObjeto1 = function(){
+	{
+		nome: 'raziel';
+	}
+}
 
-
-
-
-
+console.log(arrowObjeto1());
 
 
 
