@@ -1,4 +1,4 @@
-//Primeira maneira clássica
+//Maneira clássica
 
 function log(value){
 	console.log(value);
@@ -6,13 +6,13 @@ function log(value){
 
 log('Funcão clássica');
 
-//Segunda maneira: omitir o nome da função atribuindo ela a uma variavél
+//Função anonima: omitir o nome da função atribuindo ela a uma variavél ou para outra função
 
 var log = function(value){
 	console.log(value);
 }
 
-log('Função de atribuição');
+log('Função anonima');
 
 //Com return
 
@@ -21,3 +21,32 @@ var sum = function(a,b){
 }
 
 console.log(sum(10,10));
+
+
+//Arrow functions, mesmo principio de uma função anonima
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
