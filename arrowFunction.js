@@ -10,7 +10,7 @@ logClassica('Funcão clássica');
 var logAnonima = function(value){
 	console.log(value);
 }
-log('Função anonima');
+logAnonima('Função anonima');
 
 //Função anonima: com return
 
@@ -39,7 +39,10 @@ var arroComStatement = (a,b) =>{
 }
 arroComStatement(10,5);
 
-
+//Quando se tem apenas um argumento pode se omitir o parentese
+//com dois argumentos não se pode omitir é obrigatorio usar
+var arrowUmParametro = a => a + 19;
+console.log(arrowUmParametro(10));
 
 
 
