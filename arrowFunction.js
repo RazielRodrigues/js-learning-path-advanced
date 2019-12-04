@@ -207,4 +207,3 @@ this.log('No final com arrow function ela pega o contexto lexico ou seja somente
 
 obj.showContext();
 
-
