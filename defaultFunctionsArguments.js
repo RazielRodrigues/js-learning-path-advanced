@@ -42,13 +42,4 @@ console.log(multiplicaoLazy(3, undefined));
 console.log(multiplicaoLazy(3, undefined));
 console.log(multiplicaoLazy(3, 2));
 //return = 3 vezes o numero ramdomico da outra função
-
-
-
-
-
-
-
-
-
-
+//Bom para gerar id,senhas, hash e qualquer tipo de erro
