@@ -5,7 +5,7 @@
 var propriedade = 'Propriedade da variavel!';
 
 var objetoClassico = {
-	//Strinf
+	//String
 	nome: 'Raziel',
 
 	//Numero
@@ -21,3 +21,17 @@ var objetoClassico = {
 }
 
 console.log(objetoClassico);
+
+//Com o ECMA 6 é possivel omitir o lado direito funciona com var e funções:
+var propriedade = 'Propriedade da variavel!';
+var id = function(){
+		return Math.random() * 10;
+	}
+
+var objetoEcma = {
+	id,
+	propriedade
+}
+
+console.log(objetoEcma);
+objetoEcma.id();
