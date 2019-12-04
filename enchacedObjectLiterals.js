@@ -47,21 +47,17 @@ console.log(objetoEcma.sum(1,2));
 console.log(objetoEcma.sumOmitidido(2,2));
 
 
+//Atribuindo uma nova propriedade atraves de variaveis, e depois colocando um valor
+var propName = 'Nome do campo via variavel';
+var objetoPropriedade = {};
+objetoPropriedade[propName] = 'conteudo indo para o campo criado via variavel';
+objetoPropriedade[propName + 'Concatenando'] = 'conteudo indo para o campo criado via variavel';
+console.log(objetoPropriedade);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Com ECMA 6 funciona assim
+var propName = 'Nome do campo via variavel';
+var objetoPropriedade = 
+{
+	[propName]: 'conteudo indo para o campo criado via variavel'
+};
+console.log(objetoPropriedade);
