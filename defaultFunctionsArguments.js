@@ -28,10 +28,10 @@ function multiplicaoTroca(a,b = a){
 console.log(multiplicaoTroca(3, undefined));
 //return = 9
 
-
-
-//Conceito de lazy evaluation
+//Conceito de lazy evaluation, enquanto o argumento não é passado
+//é usado a função no lugar dele
 function numberRandom(){
+	console.log('Gerando número...');
 	return Math.random() + 19;
 }
 
@@ -39,6 +39,8 @@ function multiplicaoLazy(a,b = numberRandom()){
 	return a * b;
 }
 console.log(multiplicaoLazy(3, undefined));
+console.log(multiplicaoLazy(3, undefined));
+console.log(multiplicaoLazy(3, 2));
 //return = 3 vezes o numero ramdomico da outra função
 
 
