@@ -2,19 +2,28 @@
 //Pois se nao passar o argumento o que entra no lugar e o undefined
 //Causando erros no codigo...
 
-function multiplicao(a,b){
+function multiplicaoVerbosa(a,b){
 	//gambeta b = b || 1;
 	//b = typeof b === 'undefined' ? 1 : b;
 	return a * b;
 }
 
-console.log(multiplicao(3));
+console.log(multiplicaoVerbosa(3));
 
-//return = NaN pi certo com as validação
+//return = NaN pi certo com as validação que é 6
 
 //Com o ECMA 6 para implementar um valor default é so adicionar um simbolo de igual.
-function multiplicao(a,b = 1){
+//Funciona com todos os parametros
+function multiplicaoDefault(a,b = 1){
 	return a * b;
 }
-console.log(multiplicao(3));
+console.log(multiplicaoDefault(3));
 //return = 3
+
+//Reverenciando o parametro com o outro, caso falte o argumento
+//o parametro fica igual ao definiido
+function multiplicaoTroca(a,b = a){
+	return a * b;
+}
+console.log(multiplicaoTroca(3, undefined));
+//return = 9
