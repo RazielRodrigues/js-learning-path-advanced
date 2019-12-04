@@ -153,10 +153,59 @@ var obj = {
 obj.showContext();
 
 
+//CONTEXTO DE INVOCAÇÃO PT.3
+//Declarando uma função de settimeout de nivel global do browser, 
+//e chamando a log dentro dela
+//de qualquer forma não funcionaria porque o contexto global de eventlistener
+//seria o Browser object model então o this buscaria uma função nesse contexto
+
+//Uma gambeta é usar o metodo bind que serve para fazer esquecer o contexto do BOM
+//E seguir o contexto da função
+
+var obj = {
+
+	showContext: function showContext(){
+		this.log('Chamando função abaixo por conta que pega o contexto de fora da chave ');
+
+		setTimeout(function(){
+			console.log(this);
+			this.log('Set time out!');
+		}.bind(this) ,3000);
+
+	}, 
+
+	log: function log(value){
+		console.log(value);
+	}
 
 
+};
+
+obj.showContext();
 
 
+//CONTEXTO DE INVOCAÇÃO PT.4
+//No final com arrow function ela pega o contexto lexico ou seja somente das chaves
+
+var obj = {
+
+	showContext: function showContext(){
+this.log('No final com arrow function ela pega o contexto lexico ou seja somente das chaves');
+
+		setTimeout(() => {
+			this.log('Set time out!');
+		}, 3000);
+
+	}, 
+
+	log: function log(value){
+		console.log(value);
+	}
+
+
+};
+
+obj.showContext();
 
 
 
