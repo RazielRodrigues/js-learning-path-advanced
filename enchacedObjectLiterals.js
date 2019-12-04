@@ -30,8 +30,38 @@ var id = function(){
 
 var objetoEcma = {
 	id,
-	propriedade
+	propriedade,
+	sum: function(a,b){
+		return a + b;
+	},
+
+	sumOmitidido(a,b){
+		return a + b;
+	}
+
 }
 
 console.log(objetoEcma);
 objetoEcma.id();
+console.log(objetoEcma.sum(1,2));
+console.log(objetoEcma.sumOmitidido(2,2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
