@@ -52,10 +52,29 @@ var classicaObjeto = function(){
 	return {nome: 'Fun~ão literal com objeto'}
 }
 
-console.log(arrowObjeto1());
+console.log(classicaObjeto());
 
+//Função construtora: Gerar objetos com uma função passado a propriedade pelo paramentro
+//De forma que depois se cria um novo objeto com a palavra New
 
+function construirCarro(){
+	this.Marca = 'Honda';
+}
 
+console.log(new construirCarro());
+
+//Nao funciona em arrow function
+
+var naofunc = () => {
+	this.Marca = 'Honda';
+}
+
+console.log(new naofunc());
+
+//CONCEITO DE HOSTING, QUANDO VOCE DECLARA VARIAVEIS COM VAR ELA SOBE AO TOBO DO CODIGO
+//TENDO ESCOPO GLOBAL E PODENDO SER CHAMADA ANTES MESMO DE SER DECLARADA
+//ESSE CONCEITO SE APLICA A VARIAVEIS E A FUNCOES ANONIMAS E CONSTRUTORAS
+//AS ARROWS FUNCTION NÃO POSSUEM ESSA CARACTERISTICA.
 
 
 
