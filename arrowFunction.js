@@ -44,14 +44,12 @@ arroComStatement(10,5);
 var arrowUmParametro = a => a + 19;
 console.log(arrowUmParametro(10));
 
-var arrowObjeto = () => ({nome: 'Raziel'});
+var arrowObjeto = () => ({nome: 'Função arrow com objeto'});
 
 console.log(arrowObjeto());
 
-var arrowObjeto1 = function(){
-	{
-		nome: 'raziel';
-	}
+var classicaObjeto = function(){
+	return {nome: 'Fun~ão literal com objeto'}
 }
 
 console.log(arrowObjeto1());
