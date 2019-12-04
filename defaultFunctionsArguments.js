@@ -27,3 +27,26 @@ function multiplicaoTroca(a,b = a){
 }
 console.log(multiplicaoTroca(3, undefined));
 //return = 9
+
+
+
+//Conceito de lazy evaluation
+function numberRandom(){
+	return Math.random() + 19;
+}
+
+function multiplicaoLazy(a,b = numberRandom()){
+	return a * b;
+}
+console.log(multiplicaoLazy(3, undefined));
+//return = 3 vezes o numero ramdomico da outra função
+
+
+
+
+
+
+
+
+
+
