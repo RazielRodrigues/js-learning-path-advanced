@@ -10,4 +10,11 @@ function multiplicao(a,b){
 
 console.log(multiplicao(3));
 
-//return = NaN
+//return = NaN pi certo com as validação
+
+//Com o ECMA 6 para implementar um valor default é so adicionar um simbolo de igual.
+function multiplicao(a,b = 1){
+	return a * b;
+}
+console.log(multiplicao(3));
+//return = 3
