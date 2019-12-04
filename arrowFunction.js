@@ -128,6 +128,9 @@ obj.showContext();
 //de qualquer forma não funcionaria porque o contexto global de eventlistener
 //seria o Browser object model então o this buscaria uma função nesse contexto
 
+//Uma gambeta é usar o metodo bind que serve para fazer esquecer o contexto do BOM
+//E seguir o contexto da função
+
 var obj = {
 
 	showContext: function showContext(){
@@ -135,8 +138,8 @@ var obj = {
 
 		setTimeout(function(){
 			console.log(this);
-			//this.log('Set time out!');
-		}, 3000);
+			this.log('Set time out!');
+		}.bind(this) ,3000);
 
 	}, 
 
