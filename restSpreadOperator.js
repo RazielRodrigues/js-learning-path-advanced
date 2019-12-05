@@ -134,39 +134,9 @@ var obj2 = {
 	nome: 'raziel'
 }
 
+var objMerged = {
+	...obj,
+	...obj2
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(objMerged);
