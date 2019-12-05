@@ -39,9 +39,8 @@ var { nome } = obj;
 console.log(nome);
 
 //Para definir o nome da variavel tem que escrever assim:
-
 var { nome: nome2 } = obj;
-console.log(nome);
+console.log(nome2);
 
 
 
