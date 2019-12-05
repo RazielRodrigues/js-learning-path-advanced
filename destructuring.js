@@ -15,6 +15,53 @@ console.log(queijo2, arr[0]);
 //apontando um "array" de variaveis para o que quer
 //tranformar em variaveis.
 
-
 var [queijo2, presunto2, salame2] = ['queijo','presunto','salame'];
 console.log(queijo2, arr[0]);
+
+
+//O destruction pode ser usado com objetos também
+
+//Maneira clásicca
+var obj = {
+	nome: 'raziel'
+};
+var x = obj;
+console.log(x);
+
+//Destructor
+var obj = {
+	nome: 'raziel'
+};
+
+//Assim ele procura uma propriedade nome no objeto e cria uma variavel
+//com o valor dessa propriedade setado.
+var { nome } = obj;
+console.log(nome);
+
+//Para definir o nome da variavel tem que escrever assim:
+
+var { nome: nome2 } = obj;
+console.log(nome);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
