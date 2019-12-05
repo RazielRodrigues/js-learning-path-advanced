@@ -58,19 +58,38 @@ console.log(sum(1,2,3,4,5));
 //e pode ser usado como argmentos no return de outra função.
 //também pode ser usado com: Strings, arrays, objects literais e objectos iteraveis
 
+//Forma clássica de passar todos os retornos de uma função para a outra função
+var multiply = (...args) => args.reduce((acc, value) => acc * value, 1);
+
+/*
+Antes uma atenção para entender o que acontece na função multiply
+vamos conhecer o metodo reduce:
+
+O método reduce()executa uma função reducer (provida por você)
+ para cada membro do array, resultando num único valor de retorno.
+
+*/
+
+var sum = (...restOperator) => {
+	return multiply.apply(undefined, restOperator);
+}
+alert(sum(10,10));
 
 
 
 
+//Com ECMA 6 usando spread operator:
+
+var multiply = (...args) => args.reduce((acc, value) => acc * value, 1);
+
+//Não precisa mais usar o metodo apply
+var sum = (...restOperator) => {
+	return multiply(...spreadOperator);
+}
+alert(sum(10,10));
 
 
-
-
-
-
-
-
-
+//Spread operator funciona com: string, arrays, objetos...
 
 
 

@@ -48,8 +48,12 @@ var arrowObjeto = () => ({nome: 'Função arrow com objeto'});
 
 console.log(arrowObjeto());
 
+//Metodo em forma de arrow
+var sum = () => alert('ok');
+sum();
+
 var classicaObjeto = function(){
-	return {nome: 'Fun~ão literal com objeto'}
+	return {nome: 'Função literal com objeto'}
 }
 
 console.log(classicaObjeto());
