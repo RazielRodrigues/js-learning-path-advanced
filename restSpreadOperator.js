@@ -89,7 +89,58 @@ var sum = (...restOperator) => {
 alert(sum(10,10));
 
 
-//Spread operator funciona com: string, arrays, objetos...
+//Spread operator funciona com: string, arrays, objetos:
+
+
+
+var nome = 'Raziel';
+function logArgs(...args){
+	console.log(args);
+}
+//retorna a string em forma de array;
+logArgs(...nome);
+
+
+
+//retorna o array literal 
+var arr = [1,2,3];
+function logArgs(...args){
+	console.log(args);
+}
+logArgs(...arr);
+
+
+
+
+//definir o parametro do array também.
+var arr = [1,2,3];
+function logArgs(a,b){
+	console.log(a,b);
+}
+logArgs(...arr);
+
+//Concatena o arr onde colocou o spread operator
+arr = [1,1,1];
+arr2 = [2,2,2, ...arr];
+
+//Tambem funciona com objetos literais
+
+
+var obj = {
+	test: 123
+}
+
+var obj2 = {
+	nome: 'raziel'
+}
+
+
+
+
+
+
+
+
 
 
 
