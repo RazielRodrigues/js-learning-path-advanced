@@ -1,0 +1,1 @@
+//O simbolo não é uma string e também não é um número, é apenas um identifcador único.

@@ -42,11 +42,18 @@ console.log(nome);
 var { nome: nome2 } = obj;
 console.log(nome2);
 
+//Dá para fazer varios nested com isso é de boa...
 
+//Usando com funções:
 
+function sum([a,b] = [0,0]){
+	return a + b;
+}
 
+console.log(sum([2,3]));
+console.log(sum([]));
 
-
+//e com objetos tambem e com default values
 
 
 
