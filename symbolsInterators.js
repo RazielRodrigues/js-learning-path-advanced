@@ -43,7 +43,9 @@ console.log(value);
 
 }
 
+for (let value of obj){
+console.log(value);
 
-
+}
 
 
