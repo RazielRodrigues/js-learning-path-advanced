@@ -6,6 +6,7 @@ function doSomething(callback){
 	}, 1000);
 }
 
+function doOtherthing(callback){
 	setTimeout(function(){
 
 
