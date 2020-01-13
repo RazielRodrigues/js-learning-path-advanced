@@ -128,7 +128,6 @@ const doOtherThingPromisse =  () => new Promise((resolve, rejected) => {
 	}, 1000);
 });
 
-
 doSomethingPromisse()
 .then(data => {
 console.log(data);
@@ -139,3 +138,33 @@ return doOtherThingPromisse();
 })
 .catch( error => console.log('Ops deu errado!', error));
 //Qualquer erro que acontecer dentro das promisses o erro vai ser tratado diretamente pelo catch
+
+//Podemos também executar as promisses em paralelo com o metodo promisse all
+//ele executa as promisses e o resultado delas vem em forma de array.
+
+Promise.all([doSomethingPromisse(), doOtherThingPromisse()]).then(data => {
+	console.log(data);
+	console.log(data[1].split(''));
+}).catch('Deu erro!');
+
+const doSomethingPromisse = () => new Promise((resolve, rejected) => {
+	//throw new Error('Sem conexão!');
+	setTimeout(function(){
+		//fez alguma coisa aqui
+		resolve('First data');
+	}, 2000);
+});
+
+const doOtherThingPromisse =  () => new Promise((resolve, rejected) => {
+	setTimeout(function(){
+		//fez alguma coisa aqui
+		resolve('Second data');
+	}, 1000);
+});
+
+//Com o promisse.race conseguimos fazer com que a promisse que seja executada primeiro seja a promisse
+//que seja resolvida mais rápido com base no time out.
+Promise.race([doSomethingPromisse(), doOtherThingPromisse()]).then(data => {
+	console.log(data);
+	console.log(data[1].split(''));
+}).catch('Deu erro!');
