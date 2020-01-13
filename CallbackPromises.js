@@ -139,10 +139,3 @@ return doOtherThingPromisse();
 })
 .catch( error => console.log('Ops deu errado!', error));
 //Qualquer erro que acontecer dentro das promisses o erro vai ser tratado diretamente pelo catch
-
-
-
-
-
-
-
