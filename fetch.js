@@ -3,7 +3,6 @@
 //um callbackhell
 
 //o fetch serve para fazer essas requisições de uma forma mais fácil:
-
 fetch('/data.json')
 .then(responseStream => responseStream.json())
 .then(data => { console.log(data);
@@ -21,16 +20,22 @@ fetch('/data.json')
 //de status do responseStream para saber se é 200 se for 200 tentar convertar os dados
 //senão lança um novo erro, caso não tenha essa verificação o browser tenta ainda converter
 //e vai retornar um status de indefinido.
-
 fetch('/data.json')
 .then(responseStream => {
 	if (responseStream.status === 200) {
-		responseStream.json();
+		return responseStream.json();
 	} else {
 		throw new Error('Erro de requisição!');
 	}
-}
+})
 .then(data => { console.log(data);
-}).catch(err => {
+})
+.catch(err => {
 	console.log('Erro que ocorreu:', err);
 });
+
+//o Fetch pode ser configurado usando o seu segundo parametro por default ele é GET
+fetch('/data.json',
+	method: 'post',
+	body: ''
+)

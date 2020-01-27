@@ -1,4 +1,3 @@
-//Maneira clássica de escrever objetos literias em JS
 //Pode se colocar as propriedades de qualquer tipo
 //ou deficinir uma propriedade com base em uma varivel
 
