@@ -1,1 +1,3 @@
-main.js
+function consultaCep(){
+
+}
