@@ -1,18 +1,36 @@
 function consultaCep(){
-
+	
 	var	inputCep = document.getElementById('inputCep').value;
 	var url = "https://viacep.com.br/ws/"+inputCep+"/json/";
-	console.log(url);
-	
-	$.ajax({
-		url: url,
-		type: "GET",
-		success: function(response){
-			console.log(response);
+
+		try{
+			$.ajax({
+				url: url,
+				type: "GET",
+				success: function(response){
+
+					$('#cep').html("CEP: "+response.cep);
+					$('#logradouro').html(response.logradouro);
+					$('#bairro').html(response.bairro);
+					$('#localidade').html(response.localidade);
+					$('#uf').html(response.uf);
+					$(".cep").show();
+				},
+
+				error: function(response){
+					alert("Erro na requisão:" + response.status);
+				}
+
+			});
+		}catch(err){
+			console.log(err);
 		}
-	});
 
 }
+
+// $(function(){
+// 	$(".cep").hide();
+// });
 
 /*
 
