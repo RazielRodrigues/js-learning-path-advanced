@@ -5,18 +5,23 @@
 	<title>JS - AJAX AND JQUERY</title>
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
 
-	<input id="inputCep">
-	<button type="button" onclick="consultaCep()">CONSULTAR CEP</button>
+<nav class="navbar navbar-light" style="background-color: #fbe084;">
 
-	<p id="cep">cep</p>
-	<p id="logradouro">logradouro</p>
-	<p id="complemento">complemento</p>
-	<p id="bairro">bairro</p>
-	<p id="localidade">localidade</p>
-	<p id="uf">UF</p>
+  <a class="navbar-brand" href="#">
+    <img src="" width="30" height="30" class="d-inline-block align-top" >
+    JQUERY AJAX | CONSULTA CEP
+  </a>
+
+  <div class="form-inline">
+    <input class="form-control mr-sm-2" placeholder="CEP" id="inputCep">
+    <button class="btn btn-primary my-2 my-sm-0" onclick="consultaCep()">BUSCAR</button>
+  </div>
+
+</nav>
 
 </body>
 </html>
