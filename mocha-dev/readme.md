@@ -1,4 +1,4 @@
-#Como usar o mocha nos testes:
+# Como usar o mocha nos testes:
 
 * Instalar o mocha primeiro, depois configurar o package json com o mocha como biblioteca de teste, ele sempre vai fazer os teste dentro de uma pasta que tenha o nome "test"
 
