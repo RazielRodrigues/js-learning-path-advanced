@@ -12,10 +12,10 @@
 * Os hooks server para controlar os testes temos os hooks: before, beforeEach, after e afterEach.s
 * Dando a possibilidade de alterar os dados que vão para dentro dos metodos e outras coisas.
 
-##LIB CHAI:
+## LIB CHAI:
 Essa lib serve para deixar os assert do node.js mais expressivo, escrevendo melhor ele de forma
 que fique mais fácil de ser interpretado.
 
-##LIB SINON:
+## LIB SINON:
 Te dá a possibilidade de testar objetos e funções a um nível de maior controle
 podendo alterar propriedades de funções e abrindo diversos cenarios.
