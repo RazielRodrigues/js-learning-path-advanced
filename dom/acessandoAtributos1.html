@@ -15,7 +15,25 @@
         <img src='http://files.cod3r.com.br/curso-web/logo-estreita.png' alt='logo'>
     </div>
     <script>
-        // ...
+        const img = document.querySelector('img');
+        console.log(img.getAttribute('src'));
+        console.log(img.src);
+        console.log(img['src']);
+        console.log(img.alt);
+
+        console.log(img.nodeType);
+        console.log(img.nodeName);
+
+        const src = img.getAttributeNode('src');
+        console.log(src.nodeType);
+        console.log(src.nodeName);
+        console.log(src.nodeValue);
+
+        const link = document.querySelector('a')
+        console.log(link.href);
+        console.log(src.nodeValue);
+        console.log(link.firstChild.nodeType);
+
     </script>
 </body>
 
