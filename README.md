@@ -1,4 +1,4 @@
-# JavaScript Learning Path: Conceitos do ECMA 6
+# JavaScript Learning Path: Manipulando DOM
 
 Loading...
 
