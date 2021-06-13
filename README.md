@@ -40,3 +40,21 @@
 
         const deselecionar = seletor => 
         document.querySelectorAll(seletor).forEach(e => e.classList.remove('destaque'));
+
+#### Modificando atributos
+
+    Podemos alterar atributos de elementos, sejam personalizados ou naturais do DOM.
+
+        lista = document.querySelector(' div ul[destino="escritório"] ');
+        console.log(lista.childNodes);
+        console.log(lista.destino);
+        console.log(lista.destino);
+        console.log(lista.getAttribute('destino'));
+        console.log(lista.hasAttribute('destino'));
+        console.log(lista.setAttribute('teste','destino'));
+        console.log(lista.removeAttribute('destino'));
+        console.log(lista.dataset.urgencia);
+        lista.dataset.urgencia = 4;
+        console.log(lista.getAttribute('data-urgencia'));
+
+#### Modificando classes
