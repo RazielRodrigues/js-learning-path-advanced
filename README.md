@@ -79,3 +79,7 @@
         classes.forEach(element => {
             console.log(element);
         });
+
+#### Modificando DOM
+
+    ...
