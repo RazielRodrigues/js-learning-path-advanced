@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CONSULTA CEP - JQUERY AJAX</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="images/fav/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/fav/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/fav/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/fav/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/fav/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/fav/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/fav/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/fav/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/fav/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/fav/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+	<link rel="manifest" href="images/fav/manifest.json">
+	<meta name="msapplication-TileColor" content="#fbe084">
+	<meta name="msapplication-TileImage" content="images/fav/ms-icon-144x144.png">
+	<meta name="theme-color" content="#fbe084">
+
+</head>
+<body style="background-color: #fbe084;">
+
+<nav class="navbar navbar-light" style="background-color: #fbe084;">
+  <a class="navbar-brand" href="index.html">
+    <img src="images/jquery-logo.png" width="30" height="30" class="d-inline-block align-top" >
+    JQUERY AJAX
+  </a>
+
+  <div class="form-inline">
+    <input class="form-control mr-sm-2" placeholder="CEP" id="inputCep">
+    <button class="btn btn-secondary my-2 my-sm-0" onclick="consultaCep()">BUSCAR</button>
+  </div>
+</nav>
+
+<main class="container">
+		<div>
+			<h3 class="cep" style="margin: 40px 10px 40px 10px;" id="cep">CEP: </h3>
+		</div>
+
+		<table class="table table-dark">
+		  <tbody>
+
+		    <tr>
+		      <td>Logradouro</td>
+		      <td id="logradouro"></td>
+		    </tr>
+
+		    <tr>
+		      <td>Bairro</td>
+		      <td id="bairro"></td>
+		    </tr>
+
+		    <tr>
+		      <td>Localidade</td>
+		      <td id="localidade"></td>
+		    </tr>
+
+		    <tr>
+		      <td>UF</td>
+		      <td id="uf"></td>
+		    </tr>
+
+		  </tbody>
+		</table>
+
+		<p class="lead"><b>AJAX significa Asynchronous JavaScript e XML. Em poucas palavras, é o uso do objeto XMLHttpRequest para se comunicar com os scripts do lado do servidor. Ele pode enviar bem como receber informações em uma variedade de formatos, incluindo JSON, XML, HTML, e até mesmo arquivos de texto. Porém a característica mais atraente do AJAX, é a sua natureza "assíncrona", o que significa que ele pode fazer tudo isso sem a necessidade de atualizar a página. Isso permite a você atualizar partes de uma página com base em eventos do usuário.</b></p>
+	</main>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
