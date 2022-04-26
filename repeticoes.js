@@ -12,5 +12,5 @@ for (let i of arr){
 	console.log(i);
 }
 
-continue //ele faz continuar mesmo após uma condição ser verdade ele "pula"
-break //break, trava
+// continue //ele faz continuar mesmo após uma condição ser verdade ele "pula"
+// break //break, trava

@@ -1,4 +1,4 @@
-#DESIGN PATTERNS: CONCEITOS NO JAVASCRIPT
+# DESIGN PATTERNS: CONCEITOS NO JAVASCRIPT
 
 1. A Pattern language: Quando surgiu o conceito de design patterns
 	- 1978

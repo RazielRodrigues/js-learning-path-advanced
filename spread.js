@@ -1,4 +1,4 @@
-var partes = ['ombro'. 'joelhos'];
+// var partes = ['ombro'. 'joelhos'];
 var musica = ['cabeca', ...partes, 'e', 'pés'];
 
 console.log(partes);

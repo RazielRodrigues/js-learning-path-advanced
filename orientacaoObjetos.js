@@ -7,7 +7,7 @@ console.log(text.__proto__.split === String.prototype.split);
 console.log(text.constructor === String);
 
 
-__proto__ -> prototype -> constructor
+// __proto__ -> prototype -> constructor
 
 //Um aponta pro outro
 
