@@ -11,9 +11,9 @@
     https://razielmiranda.github.io/pwa-learning-path/
     https://razielmiranda.github.io/js-base64-decoder/
 
-#### ONLINE: (FALTA O BANCO DE DADOS)
     https://raziel-symfony-register.herokuapp.com/
     https://raziel-pure-php.herokuapp.com/
+#### ONLINE: (FALTA O BANCO DE DADOS)
 
     https://github.com/RazielMiranda/node-api-restful
     https://github.com/RazielMiranda/nodejs-api-rest
