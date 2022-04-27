@@ -16,10 +16,8 @@
 #### OFFLINE:
 
     https://github.com/RazielMiranda/nodejs-api-rest
-
     https://github.com/RazielMiranda/laravel-estock
     https://github.com/RazielMiranda/laravel-resto-app
     https://github.com/RazielMiranda/laravel-learning-path
-
     https://github.com/RazielMiranda/symfony-learning-path-advanced
     https://github.com/RazielMiranda/symfony-react-crud
