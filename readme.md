@@ -13,19 +13,13 @@
 
     https://raziel-symfony-register.herokuapp.com/
     https://raziel-pure-php.herokuapp.com/
-#### ONLINE: (FALTA O BANCO DE DADOS)
+#### OFFLINE:
 
-    https://github.com/RazielMiranda/node-api-restful
     https://github.com/RazielMiranda/nodejs-api-rest
-    https://github.com/RazielMiranda/la-ville/tree/development
+
+    https://github.com/RazielMiranda/laravel-estock
     https://github.com/RazielMiranda/laravel-resto-app
     https://github.com/RazielMiranda/laravel-learning-path
-    https://github.com/RazielMiranda/laravel-api-project
-    https://github.com/RazielMiranda/laravel-estock
 
-    https://github.com/RazielMiranda/symfony-learning-path-middle
     https://github.com/RazielMiranda/symfony-learning-path-advanced
-    https://github.com/RazielMiranda/symfony-learning-path
-    https://github.com/RazielMiranda/symfony-tdd
     https://github.com/RazielMiranda/symfony-react-crud
-    https://github.com/RazielMiranda/todo-app
