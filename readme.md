@@ -12,8 +12,8 @@
     https://razielmiranda.github.io/js-base64-decoder/
 
 #### ONLINE: (FALTA O BANCO DE DADOS)
-    https://you-speech-we-write.herokuapp.com/
-    https://php-basic-projects.herokuapp.com/
+    https://raziel-symfony-register.herokuapp.com/
+    https://raziel-pure-php.herokuapp.com/
 
     https://github.com/RazielMiranda/node-api-restful
     https://github.com/RazielMiranda/nodejs-api-rest
